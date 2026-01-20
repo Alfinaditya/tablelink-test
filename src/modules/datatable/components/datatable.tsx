@@ -32,9 +32,11 @@ const UsersDatatable = () => {
 	const [searchTerm, setSearchTerm] = useState('');
 
 	const filteredUsers = useMemo(() => {
-		return users.filter((user) =>
-			user.name.toLowerCase().includes(searchTerm.toLowerCase()),
-		);
+		return users
+			.filter((user) =>
+				user.name.toLowerCase().includes(searchTerm.toLowerCase()),
+			)
+			.sort((a, b) => a.id - b.id);
 	}, [searchTerm]);
 
 	const totalPages = Math.ceil(filteredUsers.length / pageSize);
