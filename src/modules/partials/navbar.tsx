@@ -1,6 +1,6 @@
-import { Link, NavLink } from "react-router-dom";
-import { cn } from "@/lib/utils";
-import { links } from "./navLinks";
+import { Link, NavLink } from 'react-router-dom';
+import { cn } from '@/lib/utils';
+import { links } from './navLinks';
 
 const Navbar = () => {
 	return (
@@ -20,10 +20,10 @@ const Navbar = () => {
 								to={item.href}
 								className={({ isActive }) =>
 									cn(
-										"transition-colors hover:text-foreground/80",
+										'transition-colors hover:text-foreground/80',
 										isActive
-											? "text-foreground"
-											: "text-foreground/60",
+											? 'text-foreground'
+											: 'text-foreground/60',
 									)
 								}
 							>

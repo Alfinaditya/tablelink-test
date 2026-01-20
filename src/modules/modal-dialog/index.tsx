@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { Modal } from "./components/modal";
-import { Button } from "@/components/ui/button";
+import { useState } from 'react';
+import { Modal } from './components/modal';
+import { Button } from '@/components/ui/button';
 
 const ModalDialogPage = () => {
 	const [open, setOpen] = useState(false);

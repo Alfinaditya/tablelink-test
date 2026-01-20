@@ -1,11 +1,11 @@
-import { users } from "@/data/users";
+import { users } from '@/data/users';
 import {
 	findMaxAgeUser,
 	findMinAgeUser,
 	sortByMaxAgeUsers,
 	sortByMinAgeUsers,
-} from "./lib/utils";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+} from './lib/utils';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const maxAgeUser = findMaxAgeUser(users);
 const minAgeUser = findMinAgeUser(users);

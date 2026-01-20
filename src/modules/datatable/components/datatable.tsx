@@ -6,30 +6,30 @@ import {
 	TableHead,
 	TableHeader,
 	TableRow,
-} from "@/components/ui/table";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+} from '@/components/ui/table';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 import {
 	Select,
 	SelectContent,
 	SelectItem,
 	SelectTrigger,
 	SelectValue,
-} from "@/components/ui/select";
-import { useState, useMemo } from "react";
+} from '@/components/ui/select';
+import { useState, useMemo } from 'react';
 import {
 	ChevronLeft,
 	ChevronRight,
 	ChevronsLeft,
 	ChevronsRight,
 	Search,
-} from "lucide-react";
-import { users } from "@/data/users";
+} from 'lucide-react';
+import { users } from '@/data/users';
 
 const UsersDatatable = () => {
 	const [currentPage, setCurrentPage] = useState(1);
 	const [pageSize, setPageSize] = useState(5);
-	const [searchTerm, setSearchTerm] = useState("");
+	const [searchTerm, setSearchTerm] = useState('');
 
 	const filteredUsers = useMemo(() => {
 		return users.filter((user) =>
@@ -134,8 +134,8 @@ const UsersDatatable = () => {
 
 			<div className="flex items-center justify-between">
 				<div className="text-sm text-muted-foreground">
-					Showing {filteredUsers.length > 0 ? startIndex + 1 : 0} to{" "}
-					{Math.min(endIndex, filteredUsers.length)} of{" "}
+					Showing {filteredUsers.length > 0 ? startIndex + 1 : 0} to{' '}
+					{Math.min(endIndex, filteredUsers.length)} of{' '}
 					{filteredUsers.length} entries
 				</div>
 				<div className="flex items-center gap-2">
