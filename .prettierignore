@@ -1,2 +1,27 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
 
-node_modules/
+# Vite Production Build
+dist
+dist-ssr
+
+# TypeScript & Testing
+coverage
+*.tsbuildinfo
+
+# Generated Files & Locks
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
+
+# Local Env Files (sensitive data)
+.env
+.env.local
+.env.*.local
+
+# OS Metadata
+.DS_Store
+Thumbs.db
