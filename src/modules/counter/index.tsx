@@ -10,7 +10,7 @@ const CounterPage = () => {
 	return (
 		<div>
 			<h1>{counter}</h1>
-			<Button onClick={increment}>Add Number</Button>
+			<Button onClick={increment}>Add Number {counter}</Button>
 		</div>
 	);
 };
